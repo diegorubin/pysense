@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: sense
+Version: 0.0.1
+Summary: Sense Daemon
+Home-page: http://github.com/diegorubin/sense
+Author: Diego Rubin
+Author-email: rubin.diego@gmail.com
+License: GPL2
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha

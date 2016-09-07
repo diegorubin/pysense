@@ -1,0 +1,14 @@
+.idea
+
+build
+dist
+sems.egg-info
+
+*.pyc
+
+*db.json
+
+log/*
+
+.ropeproject
+
