@@ -2,7 +2,6 @@ from tinydb import TinyDB, Query
 
 from sense.settings import TINY_DB_PATH
 
-
 def memories():
     db = TinyDB(TINY_DB_PATH)
     return db.table('memories')
