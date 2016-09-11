@@ -7,5 +7,8 @@ class Client():
         self.proxy = Pyro4.Proxy(uri)
 
     def remember(self, name, value):
-        self.proxy.remember(name, value)
+        return self.proxy.remember(name, value)
+
+    def remind(self, name):
+        return self.proxy.remind(name)
 

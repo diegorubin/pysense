@@ -11,5 +11,7 @@ sense.egg-info/SOURCES.txt
 sense.egg-info/dependency_links.txt
 sense.egg-info/requires.txt
 sense.egg-info/top_level.txt
+sense/actions/__init__.py
+sense/memories/__init__.py
 sense/thought/__init__.py
 sense/thought/utils.py
