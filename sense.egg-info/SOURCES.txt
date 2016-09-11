@@ -1,13 +1,15 @@
 setup.py
 bin/sense
+bin/think
 sense/__init__.py
 sense/client.py
 sense/daemon.py
 sense/settings.py
-sense/thought.py
 sense/utils.py
 sense.egg-info/PKG-INFO
 sense.egg-info/SOURCES.txt
 sense.egg-info/dependency_links.txt
 sense.egg-info/requires.txt
 sense.egg-info/top_level.txt
+sense/thought/__init__.py
+sense/thought/utils.py

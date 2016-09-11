@@ -8,7 +8,7 @@ setup(
     author="Diego Rubin",
     author_email="rubin.diego@gmail.com",
     license="GPL2",
-    scripts=['bin/sense'],
+    scripts=['bin/sense', 'bin/think'],
     include_package_data=True,
     description="Sense Daemon",
     install_requires=[
