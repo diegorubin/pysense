@@ -8,5 +8,5 @@ def load_thoughts(path):
         if(f.endswith("_thought.py")):
             name = f.replace('.py', '')
             module = imp.load_source(name, os.path.join(path, f))
-            thoughts[name] = module.init()
+            thoughts[name.replace('_thought', '')] = module.init()
 

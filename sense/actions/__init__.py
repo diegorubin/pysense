@@ -11,8 +11,8 @@ def notify(title, body, image = None):
     if not image is None:
         f = join(ICONS_PATH, image)
         pixbuf = GdkPixbuf.Pixbuf.new_from_file(f)
-        notification.set_icon_from_pixbuf(image)
-        notification.set_image_from_pixbuf(image)
+        notification.set_icon_from_pixbuf(pixbuf)
+        notification.set_image_from_pixbuf(pixbuf)
 
     notification.show()
 

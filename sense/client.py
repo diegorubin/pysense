@@ -12,3 +12,9 @@ class Client():
     def remind(self, name):
         return self.proxy.remind(name)
 
+    def thoughts(self):
+        return self.proxy.thoughts()
+
+    def call(self, command, argv):
+        return self.proxy.call(command, argv)
+

@@ -10,6 +10,13 @@ command = sys.argv[1]
 
 if command == 'remember':
     print(client.remember(sys.argv[2], sys.argv[3]))
-if command == 'remind':
+elif command == 'remind':
     print(client.remind(sys.argv[2]))
+elif command == 'thoughts':
+    for thought in client.thoughts():
+        print(thought)
+elif command in client.thoughts():
+    client.call(command, sys.argv)
+else:
+    print('could not think of it')
 
