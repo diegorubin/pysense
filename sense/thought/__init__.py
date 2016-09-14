@@ -13,11 +13,16 @@ class ThoughtBase():
 
     def scheduled_run(self):
         self.run()
-        Timer(self.schedule_options['after'], self.scheduled_run).start()
+        self.job = Timer(self.schedule_options['after'], self.scheduled_run)
+        self.job.start()
 
+    def stop(self):
+        print(' stopping... ')
+        if hasattr(self, 'job'):
+            print('stop job')
+            self.job.cancel()
 
     @abstractmethod
     def run(self):
         pass
-
 

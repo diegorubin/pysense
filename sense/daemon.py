@@ -22,6 +22,14 @@ class Daemon(object):
             names.append(thought)
         return names
 
+    def rethink(self):
+        for thought in thoughts:
+            print(thought)
+            thoughts[thought].stop()
+
+        load_thoughts(THOUGHTS_PATH)
+        return 'reloaded'
+
     def call(self, command, argv):
         getattr(thoughts[command], argv[2])(argv)
 

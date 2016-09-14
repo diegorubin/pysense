@@ -15,6 +15,9 @@ class Client():
     def thoughts(self):
         return self.proxy.thoughts()
 
+    def rethink(self):
+        return self.proxy.rethink()
+
     def call(self, command, argv):
         return self.proxy.call(command, argv)
 
