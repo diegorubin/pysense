@@ -2,9 +2,11 @@ from tinydb import TinyDB, Query
 
 from sense.settings import TINY_DB_PATH
 
+def db():
+    return TinyDB(TINY_DB_PATH)
+
 def memories():
-    db = TinyDB(TINY_DB_PATH)
-    return db.table('memories')
+    return db().table('memories')
 
 def remember(name, value):
     attributes = {'name': name, 'value': value}

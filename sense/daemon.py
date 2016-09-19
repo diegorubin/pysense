@@ -31,8 +31,7 @@ class Daemon(object):
         return 'reloaded'
 
     def call(self, command, argv):
-        getattr(thoughts[command], argv[2])(argv)
-
+        return getattr(thoughts[command], argv[2])(argv)
 
 def start():
 
