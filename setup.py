@@ -13,7 +13,8 @@ setup(
     description="Sense Daemon",
     install_requires=[
         "pyro4",
-        "tinydb"
+        "tinydb",
+        "GitPython"
     ],
     classifiers=["Development Status :: 3 - Alpha"],
     packages=find_packages()

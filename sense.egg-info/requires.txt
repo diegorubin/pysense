@@ -1,2 +1,3 @@
 pyro4
 tinydb
+GitPython

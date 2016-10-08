@@ -14,4 +14,8 @@ sense.egg-info/top_level.txt
 sense/actions/__init__.py
 sense/memories/__init__.py
 sense/thought/__init__.py
+sense/thought/source.py
 sense/thought/utils.py
+tests/__init__.py
+tests/thought/__init__.py
+tests/thought/test_source.py
