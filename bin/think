@@ -14,6 +14,8 @@ elif command == 'remind':
     print(client.remind(sys.argv[2]))
 elif command == 'rethink':
     print(client.rethink())
+elif command == 'learn':
+    print(client.learn())
 elif command == 'thoughts':
     for thought in client.thoughts():
         print(thought)

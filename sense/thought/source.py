@@ -15,6 +15,7 @@ def get_thoughts_from_sources():
 
         __clone_repository(join(THOUGHTS_PATH, name), address)
 
+
 def __init_sources():
     module = imp.load_source('sources', SOURCES_FILE)
     return module.sources

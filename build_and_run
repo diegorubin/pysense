@@ -1,7 +1,7 @@
 #!/bin/bash
 
-sudo pip3 uninstall sense
+sudo -H pip3 uninstall sense -y
 python3 setup.py  sdist
-sudo pip3 install dist/sense-0.0.1.tar.gz
+sudo -H pip3 install dist/sense-0.0.1.tar.gz
 sense
 

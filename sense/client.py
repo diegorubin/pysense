@@ -1,5 +1,5 @@
 import Pyro4
-from utils import recover_uri
+from sense.utils import recover_uri
 
 class Client():
     def __init__(self):
@@ -17,6 +17,9 @@ class Client():
 
     def rethink(self):
         return self.proxy.rethink()
+
+    def learn(self):
+        return self.proxy.learn()
 
     def call(self, command, argv):
         return self.proxy.call(command, argv)

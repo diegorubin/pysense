@@ -5,6 +5,7 @@ from sense.memories import remember, remind
 from sense.settings import THOUGHTS_PATH
 from sense.utils import save_uri
 from sense.thought import thoughts
+from sense.thought import source
 from sense.thought.utils import load_thoughts
 
 @Pyro4.expose
@@ -21,6 +22,13 @@ class Daemon(object):
         for thought in thoughts:
             names.append(thought)
         return names
+
+    def learn(self):
+        try:
+            source.get_thoughts_from_sources()
+            return 'ok'
+        except FileNotFoundError as e:
+            return 'sources file not found'
 
     def rethink(self):
         for thought in thoughts:
