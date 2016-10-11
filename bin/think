@@ -2,7 +2,7 @@
 
 import sys
 
-from sense.client import Client
+from pysense.client import Client
 
 client = Client()
 

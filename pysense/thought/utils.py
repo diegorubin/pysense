@@ -1,7 +1,7 @@
 import imp
 import os
 
-from sense.thought import thoughts
+from pysense.thought import thoughts
 
 def load_thoughts(path):
     for f in os.listdir(path):

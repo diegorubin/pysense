@@ -9,10 +9,10 @@ FIXTURES = join(dirname(__file__), 'fixtures')
 SOURCES_FILE = join(FIXTURES, 'sources.py')
 THOUGHTS_PATH = join(FIXTURES, 'thoughts')
 
-from sense.thought import source
+from pysense.thought import source
 
-@patch('sense.thought.source.SOURCES_FILE', SOURCES_FILE)
-@patch('sense.thought.source.THOUGHTS_PATH', THOUGHTS_PATH)
+@patch('pysense.thought.source.SOURCES_FILE', SOURCES_FILE)
+@patch('pysense.thought.source.THOUGHTS_PATH', THOUGHTS_PATH)
 class TestSource(unittest.TestCase):
 
     def setUp(self):

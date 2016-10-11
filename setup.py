@@ -1,16 +1,16 @@
 from setuptools import setup, find_packages
-from sense import VERSION
+from pysense import VERSION
 
 setup(
-    name="sense",
+    name="pysense",
     version=VERSION,
-    url="http://github.com/diegorubin/sense",
+    url="http://github.com/diegorubin/pysense",
     author="Diego Rubin",
     author_email="rubin.diego@gmail.com",
     license="GPL2",
-    scripts=['bin/sense', 'bin/think'],
+    scripts=['bin/pysense', 'bin/think'],
     include_package_data=True,
-    description="Sense Daemon",
+    description="Organize your thoughts",
     install_requires=[
         "pyro4",
         "tinydb",

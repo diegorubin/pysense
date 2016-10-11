@@ -5,7 +5,7 @@ import imp
 
 from os.path import join
 
-from sense.settings import SOURCES_FILE, THOUGHTS_PATH
+from pysense.settings import SOURCES_FILE, THOUGHTS_PATH
 
 def get_thoughts_from_sources():
     sources = __init_sources()

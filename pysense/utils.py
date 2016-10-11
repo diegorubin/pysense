@@ -1,7 +1,7 @@
 from os.path import exists
 from os import makedirs
 
-from sense.settings import HOME, THOUGHTS_PATH, URI_FILE
+from pysense.settings import HOME, THOUGHTS_PATH, URI_FILE
 
 def init_dir():
     if not exists(HOME):

@@ -1,6 +1,6 @@
 from tinydb import TinyDB, Query
 
-from sense.settings import TINY_DB_PATH
+from pysense.settings import TINY_DB_PATH
 
 def db():
     return TinyDB(TINY_DB_PATH)

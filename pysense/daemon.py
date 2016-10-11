@@ -1,12 +1,12 @@
 import Pyro4
 
 
-from sense.memories import remember, remind
-from sense.settings import THOUGHTS_PATH
-from sense.utils import save_uri
-from sense.thought import thoughts
-from sense.thought import source
-from sense.thought.utils import load_thoughts
+from pysense.memories import remember, remind
+from pysense.settings import THOUGHTS_PATH
+from pysense.utils import save_uri
+from pysense.thought import thoughts
+from pysense.thought import source
+from pysense.thought.utils import load_thoughts
 
 @Pyro4.expose
 class Daemon(object):

@@ -1,5 +1,5 @@
 import Pyro4
-from sense.utils import recover_uri
+from pysense.utils import recover_uri
 
 class Client():
     def __init__(self):

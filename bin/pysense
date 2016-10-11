@@ -1,0 +1,9 @@
+#!/usr/bin/env python
+
+from pysense import utils
+from pysense.daemon import start
+
+utils.init_dir()
+
+start()
+
