@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 from pysense import VERSION
 
 setup(
-    name="pysense",
+    name="pysense-daemon",
     version=VERSION,
     url="http://github.com/diegorubin/pysense",
     author="Diego Rubin",
