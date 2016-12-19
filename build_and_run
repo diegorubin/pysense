@@ -2,6 +2,6 @@
 
 sudo -H pip3 uninstall pysense -y
 python3 setup.py  sdist
-sudo -H pip3 install dist/pysense-0.0.1.tar.gz
+sudo -H pip3 install dist/pysense-daemon-0.0.2.tar.gz
 pysense
 

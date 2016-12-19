@@ -5,6 +5,9 @@ from pysense.settings import TINY_DB_PATH
 def db():
     return TinyDB(TINY_DB_PATH)
 
+def all(table):
+    return table.all()
+
 def find_in_table(table, name):
     query = Query()
     return table.search(query.name == name)
