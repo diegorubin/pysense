@@ -1,6 +1,5 @@
 import Pyro4
 
-
 from pysense.memories import remember, remind
 from pysense.settings import THOUGHTS_PATH
 from pysense.utils import save_uri

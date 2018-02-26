@@ -9,7 +9,11 @@ client = Client()
 command = sys.argv[1]
 
 if command == 'remember':
-    print(client.remember(sys.argv[2], sys.argv[3]))
+    if len(sys.argv) == 3:
+        value = input("what? ")
+    else:
+        value = sys.argv[3]
+    print(client.remember(sys.argv[2], value))
 elif command == 'remind':
     print(client.remind(sys.argv[2]))
 elif command == 'rethink':

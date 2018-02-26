@@ -14,6 +14,7 @@ setup(
     install_requires=[
         "pyro4",
         "tinydb",
+        "simple-crypt",
         "GitPython"
     ],
     classifiers=["Development Status :: 3 - Alpha"],

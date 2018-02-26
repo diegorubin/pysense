@@ -1,9 +1,13 @@
+import getpass
 from tinydb import TinyDB, Query
+from pysense.tinydb.storages import CryptStorage
 
 from pysense.settings import TINY_DB_PATH
 
+PASSWORD = getpass.getpass('password to unlock database: ')
+
 def db():
-    return TinyDB(TINY_DB_PATH)
+    return TinyDB(TINY_DB_PATH, PASSWORD, storage=CryptStorage)
 
 def all(table):
     return table.all()

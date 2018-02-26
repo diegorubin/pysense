@@ -1,3 +1,4 @@
+README.md
 setup.py
 bin/pysense
 bin/think
@@ -11,6 +12,8 @@ pysense/memories/__init__.py
 pysense/thought/__init__.py
 pysense/thought/source.py
 pysense/thought/utils.py
+pysense/tinydb/__init__.py
+pysense/tinydb/storages.py
 pysense_daemon.egg-info/PKG-INFO
 pysense_daemon.egg-info/SOURCES.txt
 pysense_daemon.egg-info/dependency_links.txt
