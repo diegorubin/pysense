@@ -2,9 +2,13 @@ import getpass
 from tinydb import TinyDB, Query
 from pysense.tinydb.storages import CryptStorage
 
-from pysense.settings import TINY_DB_PATH
+from pysense.settings import TINY_DB_PATH, GUI
+from pysense.gui.dialog import ask
 
-PASSWORD = getpass.getpass('password to unlock database: ')
+if GUI:
+    PASSWORD = ask('inform password to unlock database')
+else:
+    PASSWORD = getpass.getpass('password to unlock database: ')
 
 def db():
     return TinyDB(TINY_DB_PATH, PASSWORD, storage=CryptStorage)
