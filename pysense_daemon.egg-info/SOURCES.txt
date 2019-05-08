@@ -5,6 +5,7 @@ bin/think
 pysense/__init__.py
 pysense/client.py
 pysense/daemon.py
+pysense/logger.py
 pysense/settings.py
 pysense/utils.py
 pysense/actions/__init__.py

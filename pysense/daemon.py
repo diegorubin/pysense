@@ -2,10 +2,12 @@ import Pyro4
 
 from pysense.memories import remember, remind
 from pysense.settings import THOUGHTS_PATH
+from pysense.logger import pysense_logger
 from pysense.utils import save_uri
 from pysense.thought import thoughts
 from pysense.thought import source
 from pysense.thought.utils import load_thoughts
+
 
 @Pyro4.expose
 class Daemon(object):
@@ -26,12 +28,12 @@ class Daemon(object):
         try:
             source.get_thoughts_from_sources()
             return 'ok'
-        except FileNotFoundError as e:
+        except FileNotFoundError:
             return 'sources file not found'
 
     def rethink(self):
         for thought in thoughts:
-            print(thought)
+            pysense_logger.info(thought)
             thoughts[thought].stop()
 
         load_thoughts(THOUGHTS_PATH)
@@ -39,6 +41,7 @@ class Daemon(object):
 
     def call(self, command, argv):
         return getattr(thoughts[command], argv[2])(argv)
+
 
 def start():
 
@@ -49,5 +52,3 @@ def start():
     save_uri(uri)
 
     daemon.requestLoop()
-
-
