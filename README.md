@@ -1,25 +1,21 @@
 PySense
-=====
+=======
 
-##Start PySense Daemon
+## Start PySense Daemon
 
 To start daemon execute the `pysense` command.
 
 In the first run, pysense will create a directory `.sense` in
 the user home.
 
-##The think client
+## The think client
 
-###Memories
+### Memories
 
 To set a
 
-##Thoughts Sources
+## Thoughts Sources
 
 PySense can get thoughts direct from git repositories.
 
-You can 
-
-Fetch new Thoughts: `think learn`
-
-
+You can fetch new Thoughts: `think learn`
