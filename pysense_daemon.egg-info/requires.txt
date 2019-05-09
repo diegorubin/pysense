@@ -1,3 +1,4 @@
+coloredlogs
 pyro4
 tinydb
 simple-crypt

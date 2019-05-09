@@ -12,6 +12,7 @@ setup(
     include_package_data=True,
     description="Organize your thoughts",
     install_requires=[
+        "coloredlogs",
         "pyro4",
         "tinydb",
         "simple-crypt",
@@ -20,4 +21,3 @@ setup(
     classifiers=["Development Status :: 3 - Alpha"],
     packages=find_packages()
 )
-
