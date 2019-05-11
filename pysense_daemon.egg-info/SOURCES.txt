@@ -9,6 +9,8 @@ pysense/logger.py
 pysense/settings.py
 pysense/utils.py
 pysense/actions/__init__.py
+pysense/brokers/__init__.py
+pysense/brokers/kafka.py
 pysense/gui/__init__.py
 pysense/gui/dialog.py
 pysense/memories/__init__.py
